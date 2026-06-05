@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formwerk Lab</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --fg: #1a1a1a;
+      --fg-muted: #888;
+      --bg: #f5f4f0;
+      --accent: #1a1a1a;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .wordmark {
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .wordmark span {
+      font-weight: 300;
+    }
+
+    .tagline {
+      font-size: clamp(0.95rem, 2vw, 1.125rem);
+      color: var(--fg-muted);
+      letter-spacing: 0.01em;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 2rem;
+      font-size: 0.75rem;
+      color: var(--fg-muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="wordmark">Formwerk<span>Lab</span></h1>
+    <p class="tagline">Form meets function.</p>
+  </main>
+  <footer>Coming soon</footer>
+</body>
+</html>
