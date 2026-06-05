@@ -5,81 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formwerk Lab</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --fg: #1a1a1a;
-      --fg-muted: #888;
-      --bg: #f5f4f0;
-      --accent: #1a1a1a;
-    }
-
-    html, body {
-      height: 100%;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
+      background: #f5f4f0;
     }
 
-    .logo {
-      display: flex;
-      align-items: stretch;
-      gap: 0.75rem;
-    }
-
-    .logo-bar {
-      width: 4px;
-      background: #e8391a;
-      border-radius: 2px;
-      flex-shrink: 0;
-    }
-
-    .logo-text {
-      font-size: clamp(1.5rem, 5vw, 2.75rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .logo-text .lab {
-      color: #e8391a;
-      font-size: 0.55em;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-
-    footer {
-      position: fixed;
-      bottom: 2rem;
-      font-size: 0.75rem;
-      color: var(--fg-muted);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+    img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <main>
-    <div class="logo" aria-label="Formwerk Lab">
-      <div class="logo-bar"></div>
-      <div class="logo-text">
-        <span>form</span>
-        <span>werk</span>
-        <span class="lab">lab</span>
-      </div>
-    </div>
-  </main>
-  <footer>Coming soon</footer>
+  <img src="rule-left_dark-ink_red.png" alt="Formwerk Lab Logo">
 </body>
 </html>
